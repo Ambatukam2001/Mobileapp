@@ -1,0 +1,566 @@
+body {
+  /* Set the background color to white */
+  background-color: white;
+  /* Use flexbox to center the content horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Set height to full viewport */
+  height: 100vh;
+  /* Remove default margin */
+  margin: 0;
+}
+
+#Formcontainer {
+  /* Center text inside the form container */
+  text-align: center;
+  /* Set background color */
+  background-color: #59CEE0;
+  /* Add padding around the form */
+  padding: 69px;
+  /* Set text color to white */
+  color: white;
+  /* Round the container corners */
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+#Registerform {
+  /* Adjust the margin to position the form */
+  margin-top: -240px;
+  /* Set text color to white */
+  color: white;
+  /* Center text */
+  text-align: center;
+  /* Add padding */
+  padding: 36px;
+}
+
+#sort-container {
+  text-align: center;
+}
+
+#registerbox {
+  /* Center text */
+  text-align: center;
+  /* Set background color */
+  background-color: #59CEE0;
+  /* Add padding */
+  padding: 135px;
+  /* Set text color to white */
+  color: white;
+  /* Round the container corners */
+  border-radius: 10px;
+}
+
+#phone-container {
+  /* Set background color */
+  background-color: white;
+  /* Remove padding */
+  padding: 0;
+  /* Set a fixed width and height */
+  width: 350px;
+  height: 520px;
+  /* Add a black border around the container */
+  border: 15px solid black;
+  /* Add a shadow around the container */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  /* Use flexbox to arrange content in a column */
+  display: flex;
+  flex-direction: column;
+  /* Hide overflow */
+  overflow: hidden;
+  /* Set padding at the bottom */
+  padding-bottom: 36px;
+  /* Set background color and round corners */
+  background-color: black;
+  border-radius: 10px;
+  /* Position relative for potential absolute positioning inside */
+  position: relative;
+}
+
+#phone-screen {
+  /* Allow flexible height */
+  flex: 1;
+  /* Set padding */
+  padding: 20px;
+  /* Set background color to white */
+  background-color: white;
+  /* Enable vertical scrolling */
+  overflow-y: auto;
+  /* Smooth scrolling for the content */
+  scroll-behavior: smooth;
+  margin-top: 33px;
+}
+
+
+#phonescreen {
+  /* Allow flexible height */
+  flex: 1;
+  /* Set padding */
+  padding: 20px;
+  /* Set background color to white */
+  background-color: white;
+  margin-top: 0px;
+}
+
+/* Navbar styling */
+.navbar {
+  /* Full width */
+  width: 100%;
+  /* Set background color */
+  background-color: #007bff;
+  /* Remove padding */
+  padding: 0;
+  /* Position the navbar at the top of the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Set a high z-index to keep it above other content */
+  z-index: 10;
+}
+
+/* Paragraph styling */
+p {
+  /* Add left margin */
+  margin-left: 16px;
+  /* Set font family and size */
+  font-family: sans-serif;
+  font-size: 9px;
+  /* Set text color to white */
+  color: white;
+}
+
+/* Navbar list styles */
+.navbar ul {
+  /* Use flexbox to space out list items */
+  display: flex;
+  justify-content: space-between;
+  /* Remove list styling and padding */
+  list-style-type: none;
+  margin: 0;
+  padding: 4px;
+  /* Full width */
+  width: 100%;
+}
+
+.navbar ul li {
+  /* Center text inside each list item */
+  text-align: center;
+  /* Make each item flexible */
+  flex: 1;
+  /* Add horizontal padding */
+  padding: 0 5px;
+}
+
+/* Navbar links */
+.navbar ul li a {
+  /* Set text color to white */
+  color: white;
+  /* Remove underline */
+  text-decoration: none;
+  /* Set font size */
+  font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+  /* Add underline when hovering */
+  text-decoration: underline;
+}
+
+/* Search container */
+.search-container {
+  align-items: center;
+  /* Make it flexible */
+  /* Add margin on the left */
+  margin-left: -13px;
+  margin-top: 6px;
+}
+
+#sort-options {
+  margin-left: 55px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: #014185;
+  background-color: #59CEE0;
+}
+
+/* Search input field */
+#searchInput {
+  /* Fill the available space */
+  flex: 1;
+  /* Add padding */
+  padding: 5px;
+  /* Set font size */
+  font-size: 0.9rem;
+  /* Remove borders and add rounded corners */
+  border: none;
+  border-radius: 5px;
+  /* Add right margin */
+  margin-right: 5px;
+}
+
+/* Search button */
+#searchBtn {
+  /* Set background color */
+  background-color: #59CEE0;
+  /* Set text color */
+  color: #0056b3;
+  /* Remove border and add padding */
+  border: none;
+  padding: 5px 10px;
+  /* Add rounded corners */
+  border-radius: 5px;
+  /* Change cursor to pointer */
+  cursor: pointer;
+  /* Set font size */
+  font-size: 0.9rem;
+}
+
+#tagname {
+    color: white;
+    margin-left: 11px;
+    margin-top: 6px;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Search button hover state */
+#searchBtn:hover {
+  /* Change background and text color on hover */
+  background-color: #0056b3;
+  color: #59CEE0;
+}
+
+/* Grid for grocery items */
+.grocery-items {
+  /* Use grid layout with 2 columns */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Set gap between items */
+  gap: 15px;
+  /* Add margin at the top */
+  margin-top: 20px;
+}
+
+/* Individual grocery item styling */
+.grocery-items .item {
+  /* Center the text */
+  text-align: center;
+  /* Add padding */
+  padding: 5px;
+  /* Set background color */
+  background-color: #59CEE0;
+  /* Add rounded corners */
+  border-radius: 8px;
+  /* Set position relative */
+  position: relative;
+  /* Add extra padding at the bottom */
+  padding-bottom: 40px;
+}
+
+/* Product image inside grocery item */
+.grocery-items .item img.product-image {
+  /* Center the image */
+  display: block;
+  margin: 0 auto 10px;
+  /* Limit the max width and make height automatic */
+  max-width: 80%;
+  height: auto;
+}
+
+/* Text inside grocery items */
+.grocery-items .item p {
+  /* Add margin to separate text */
+  margin: 5px 0;
+  /* Set font size */
+  font-size: 0.8rem;
+}
+
+/* Class for product image upload */
+.product-image-upload {
+  /* Center the element */
+  display: block;
+  margin: 0 auto 10px;
+  /* Add padding */
+  padding: 5px;
+}
+
+/* Cart section styling */
+#cart {
+  /* Add margin at the top */
+  margin-top: 20px;
+}
+
+/* List inside the cart */
+#cart ul {
+  /* Remove list style */
+  list-style-type: none;
+  /* Remove padding */
+  padding: 0;
+}
+
+/* Individual cart list item */
+#cart ul li {
+  /* Use flexbox to arrange content horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Add margin at the bottom */
+  margin-bottom: 5px;
+}
+
+/* Checklist item styling */
+.checklist-item {
+  /* Use flexbox for horizontal alignment */
+  display: flex;
+  align-items: center;
+  /* Add margin at the bottom */
+  margin-bottom: 10px;
+}
+
+/* Styling for checklist checkbox */
+.checklist-item input[type="checkbox"] {
+  /* Add margin on the right */
+  margin-right: 10px;
+}
+
+/* Class for hiding elements */
+.hidden {
+  /* Hide the element */
+  display: none;
+}
+
+/* Items container list */
+#items-container {
+  /* Remove list style */
+  list-style-type: none;
+  /* Remove padding */
+  padding: 0;
+}
+
+/* Style for checked items */
+#items-container li.checked {
+  /* Reorder checked items */
+  order: 1;
+}
+
+/* Buttons styling */
+.edit-btn, .add-to-cart-btn, .Btn {
+  /* Set background color */
+  background-color: #007bff;
+  /* Add margin on the top and bottom */
+  margin-bottom: 5px;
+  margin-top: 5px;
+  /* Set text color to white */
+  color: white;
+  /* Remove borders */
+  border: none;
+  /* Add rounded corners */
+  border-radius: 5px;
+  /* Add padding */
+  padding: 5px 8px;
+  /* Change cursor to pointer */
+  cursor: pointer;
+  /* Transition for background color and transform */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Remove from cart button styling */
+.remove-from-cart-btn {
+  /* Add left margin */
+  margin-left: 19px;
+  /* Set background color */
+  background-color: #59CEE0;
+  /* Remove border and add padding */
+  border: none;
+  padding: 9px;
+  /* Add rounded corners */
+  border-radius: 5px;
+  /* Set text color and font properties */
+  color: white;
+  font-weight: 900;
+  font-size: 10px;
+  font-family: monospace;
+  /* Change cursor to pointer */
+  cursor: pointer;
+  /* Add transition for background color and transform */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover state for remove from cart button */
+.remove-from-cart-btn:hover {
+  /* Change background color */
+  background-color: #0056b3;
+  /* Slightly increase button size */
+  transform: scale(1.01);
+}
+
+/* Hover state for edit, add-to-cart, and generic buttons */
+.edit-btn:hover, .add-to-cart-btn:hover, .Btn:hover {
+  /* Change background color */
+  background-color: #0056b3;
+  /* Slightly increase button size */
+  transform: scale(1.01);
+}
+
+/* Cart section styling */
+#cart {
+  /* Set background color */
+  background-color: #007bff;
+  /* Add padding */
+  padding: 35px;
+  /* Round the container corners */
+  border-radius: 10px;
+}
+
+/* Heading 3 styling */
+h3 {
+  /* Set font size */
+  font-size: 30px;
+  /* Set text color */
+  color: white;
+  /* Center align the text */
+  text-align: center;
+  /* Use a specific font family */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Heading 2 styling */
+h2 {
+  /* Set text color */
+  color: #0056b3;
+  /* Center align the text */
+  text-align: center;
+  /* Use a specific font family */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Checkout button styling */
+#checkoutBtn {
+  /* Set background color */
+  background-color: #59CEE0;
+  /* Add padding */
+  padding: 10px;
+  /* Add top and bottom margins */
+  margin-bottom: 5px;
+  margin-top: 5px;
+  /* Round the button corners */
+  border-radius: 5px;
+  /* Set text color to white */
+  color: white;
+  /* Remove borders */
+  border: none;
+  /* Add padding for width */
+  padding: 10px 15px;
+  /* Change cursor to pointer */
+  cursor: pointer;
+  /* Add transition for background color and transform */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Styling for product button */
+.product-Btn {
+  /* Add padding at the top */
+  padding-top: 30px;
+}
+
+/* Product item styling */
+.product-item {
+  /* Add padding at the top and bottom */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Product image padding */
+.product-image {
+  /* Add padding at the top and bottom */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Hover state for checkout button and submit button */
+#checkoutBtn:hover, .submitBtn:hover {
+  /* Change background color */
+  background-color: #0056b3;
+  /* Slightly increase button size */
+  transform: scale(1.01);
+}
+
+/* Edit form container styling */
+#edit-form-container {
+  /* Add padding */
+  padding: 10px;
+  /* Set background color */
+  background-color: #007bff;
+  /* Round the container corners */
+  border-radius: 10px;
+}
+
+/* Edit form styling */
+#editForm {
+  /* Add padding */
+  padding: 10px;
+}
+
+/* Input fields inside the edit form */
+#editName, #editBrand, #editPrice, #editWeight, #editQuantity, #editStore, #editCategory {
+  /* Add margin at the top and left */
+  margin-top: 5px;
+  margin-left: 11px;
+  /* Add padding to the right */
+  padding-right: 58px;
+  /* Round the input field corners */
+  border-radius: 5px;
+}
+
+/* Item name styling inside edit form */
+.itemName {
+  /* Set text color and font size */
+  color: white;
+  font-size: 10px;
+  /* Add left margin */
+  margin-left: 108px;
+}
+
+/* Edit image styling */
+#editImage {
+  /* Set text color */
+  color: white;
+}
+
+/* Submit button inside edit form */
+.submitBtn {
+  /* Set background color */
+  background-color: #59CEE0;
+  /* Remove border and add padding */
+  border: none;
+  padding: 8px;
+  /* Set text color to white */
+  color: white;
+  /* Add top margin */
+  margin-top: 15px;
+  /* Round the button corners */
+  border-radius: 5px;
+  /* Change cursor to pointer */
+  cursor: pointer;
+  /* Add transition for background color and transform */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#account {
+  font-size: 10px;
+  margin-left: -5px;
+  font-family: inherit;
+}
+
+a {
+  color: #0056b3;
+  font-weight: 100;
+}
+
+a:hover {
+  color: #014185
+}
