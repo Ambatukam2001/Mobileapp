@@ -105,11 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const reader = new FileReader();
         reader.onload = function(event) {
           item.image = event.target.result;
-          displayItems(); // Update display after file load
+          displayItems(); 
         };
         reader.readAsDataURL(file);
       } else {
-        displayItems(); // Update display
+        displayItems(); 
       }
 
       editFormContainer.classList.add('hidden');
