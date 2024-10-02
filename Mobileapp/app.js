@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="product-item">
           <p><strong>Product Name:</strong> ${item.name}</p>
           <p><strong>Brand:</strong> ${item.brand}</p>
-          <p><strong>Price:</strong> $${item.price.toFixed(2)}</p>
+          <p><strong>Price:</strong> ₱${item.price.toFixed(2)}</p>
           <p><strong>Weight/Volume:</strong> ${item.weight}</p>
           <p><strong>Quantity:</strong> ${item.quantity}</p>
           <p><strong>Store:</strong> ${item.store}</p>
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       itemDiv.innerHTML = `
         <p><strong>Product Name:</strong> ${cartItem.name}</p>
         <p><strong>Quantity:</strong> ${cartItem.quantity}</p>
-        <p><strong>Price:</strong> $${cartItem.price.toFixed(2)}</p>
+        <p><strong>Price:</strong> ₱${cartItem.price.toFixed(2)}</p>
         <button class="remove-from-cart-btn" data-index="${index}">Delete</button>
       `;
       cartItems.appendChild(itemDiv);
